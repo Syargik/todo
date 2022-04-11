@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
 </head>
-<body>
-    
+
+<body class="center-screen">
+    <div class="todobox" id="todobox">
+        <div class="todolist" id="todolist"></div>
+        <div class="name">Todo App</div>
+        <div class="createtodo" id="createtodo" type="button" onclick="create();">+</div>
+        <input class="todoname" id="todoname" type="text" placeholder="Type todo task...">
+    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>

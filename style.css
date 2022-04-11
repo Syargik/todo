@@ -1,0 +1,175 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.center-screen {
+    background-image: url(https://mcdn.wallpapersafari.com/medium/15/27/0ZqR69.jpg);
+    background-repeat: repeat;
+}
+
+.todobox {
+    position: absolute;
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 540px;
+    height: 640px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.name {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 50px;
+    color: #fb7100;
+}
+
+.createtodo {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 100px;
+    font-weight: 600;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #fb7100;
+    cursor: pointer;
+}
+
+.createtodo:hover {
+    transform:scale(1.1);
+    box-shadow: 0px 0px 3px 0px #000;
+}
+
+.createtodo::selection {
+    background: none;
+}
+
+.div {
+    max-width: 435px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    line-height: 70px;
+}
+
+.div::selection {
+    background: none;
+}
+
+.todoname {
+    position: absolute;
+    overflow: hidden;
+    padding-left: 1px;
+    padding-right: 10px;
+    font-size: 30px;
+    top: 90px;
+    width: 437px;
+    height: 50px;
+    border: 2px solid #e8e9ec;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    z-index: -1;
+}
+
+.todoname::placeholder {
+    font-size: 30px;
+    font-weight: 500;
+    opacity: 30%;
+}
+
+input:focus {
+    border: 2px solid #c3c4c7;
+    outline: none;
+}
+
+.todolist {
+    position: absolute;
+    width: 490px;
+    height: 470px;
+    left: 20px;
+    top: 190px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    line-height: 70px;
+}
+
+.todolist::-webkit-scrollbar {
+    width: 3px;
+}
+
+.todolist::-webkit-scrollbar-thumb {
+    background-color: #c3c4c7;
+    border-radius: 10px;
+}
+
+@keyframes add {
+    from {
+        opacity: 0;
+        right: 100px;
+    }
+
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.todotask {
+    position: relative;
+    height: 70px;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 35px;
+    width: 440px;
+    overflow: auto;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-left: 5px solid #fc8644;
+    border-radius: 3px;
+    animation: add 1s ease-out;
+}
+
+
+.todotask:hover {
+    transform: translateY(-5px);
+    background-color: #f4f4f4;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 0px #000;
+}
+
+
+.todotask::-webkit-scrollbar {
+    width: 2px;
+    background-color: #f4f4f4;
+}
+
+.todotask::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: #c3c4c7;
+    border-radius: 10px;
+}
+
+.trashbin{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-image: url(https://i.imgur.com/PHZKC5v.png);
+}
+
+.trashbin:hover {
+    background-image: url(https://i.imgur.com/NOBl8OW.png);
+}
