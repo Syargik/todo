@@ -14,7 +14,8 @@ function create() {
     newtask.id = id;
 
     trashbin = document.createElement(`button`);
-    trashbin.className = `trashbin`;
+    trashbin.className = `material-icons`;
+    trashbin.innerText = `delete`
     trashbin.id = newtask.id;
     trashbin.addEventListener(`click`, remove(trashbin.id));
 
