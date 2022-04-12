@@ -167,19 +167,20 @@ input:focus {
     border-radius: 10px;
 }
 
-.trashbin {
+.material-icons {
     cursor: pointer;
     position: absolute;
-    right: 5px;
-    top: 30%;
+    font-size: 35px !important;
+    right: 20px;
+    top: 25%;
     height: 30px;
     width: 30px;
     border: none;
-    background-image: url(https://i.imgur.com/PHZKC5v.png);
+    background: none;
 }
 
-.trashbin:hover {
-    background-image: url(https://i.imgur.com/NOBl8OW.png);
+.material-icons:hover {
+    color: #ff0000;
 }
 
 @keyframes remove {
